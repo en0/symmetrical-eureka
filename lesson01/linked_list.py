@@ -23,17 +23,4 @@ class LinkedList:
             return self._tail.value
 
     def remove(self, value: any) -> None:
-        #raise NotImplementedError("You need to write this code.")
-
-        if self._tail and self._tail.value == value:
-            self._tail = self._tail.prev
-            return
-
-        current_node = self._tail
-        next_node = None
-        while current_node is not None:
-            if current_node.value == value:
-                next_node.prev = current_node.prev
-                return
-            next_node = current_node
-            current_node = current_node.prev
+        raise NotImplementedError("You need to write this code.")
